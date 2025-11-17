@@ -10,11 +10,6 @@ class wave {
       this.acceleration.add(force);
     }
 
-    run() {
-    this.update();
-    this.display();
-    }
-
     update() {
       this.velocity.add(this.acceleration);
       this.position.add(this.velocity);
