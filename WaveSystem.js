@@ -3,7 +3,7 @@ class WaveSystem {
     this.origin = origin.copy();
     this.particles = [];
         for (let i = 0; i < numParticles; i++){
-            let p = new WaveParticle(this.origin.copy().add(createVector(i*2 - numParticles, 0)));
+            let p = new wave(this.origin.copy().add(createVector(i*2 - numParticles, 0)));
             this.particles.push(p);
     }
 }
