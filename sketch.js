@@ -21,6 +21,10 @@ class Particle {
     this.lifespan = 255;
     }
 
+    applyForce(force){
+      this.acceleration.add(force);
+    }
+
     run() {
     this.update();
     this.display();
