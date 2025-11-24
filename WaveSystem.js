@@ -1,4 +1,4 @@
-class WaveSystem {
+class waveSystem {
   constructor(origin, numParticles) {
     this.origin = origin.copy();
     this.particles = [];

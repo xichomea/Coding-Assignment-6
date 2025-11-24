@@ -4,7 +4,7 @@ function setup() {
   createCanvas(720, 400);
   let positions = [180, 360, 540];
   for (let i = 0; i < positions.length; i++) {
-    waves.push(new WaveSystem(createVector(positions[i], height/2), 100, i));
+    waves.push(new glowWaveSystem(createVector(positions[i], height/2), 100));
   }
 }
 
