@@ -18,6 +18,7 @@ class wave {
       let back = p5.Vector.sub(this.origin, this.position);
       back.mult(0.02);
       this.velocity.add(back);
+      this.velocity.mult(0.98);
     }
 
     display() {
